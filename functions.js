@@ -121,7 +121,7 @@
 			);
 	
 	app.config(['$httpProvider','searchServiceProvider',function ($httpProvider, searchServiceProvider) {
-		searchServiceProvider.set({url:'http://www.omdbapi.com',data:{
+		searchServiceProvider.set({url:'https://www.omdbapi.com',data:{
 			r:'json',
 			v:1,
 			y:'',
