@@ -26,7 +26,9 @@ app.controller('LunchCheckController', [ '$scope', function($scope) {
 			}
 		}
 		else{
-			$scope.result = '';
+			$scope.result = 'Please enter the items!';
+			$scope.resultClass = 'fontRed';
+
 		}
 
 	}
