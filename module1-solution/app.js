@@ -16,11 +16,16 @@ app.controller('LunchCheckController', [ '$scope', function($scope) {
 			return arr;
 		}
 		if (items && items.trim() != '' && items != null) {
-			if (removeInvalidItems(items.replace(/\ +/g,'').split(',')).length > 3) {
+			var finalArr=removeInvalidItems(items.replace(/\ +/g,'').split(','));
+			if (finalArr.length > 3) {
 				$scope.result = 'Too much!';
 				$scope.resultClass = 'fontRed';
 
-			} else {
+			} else if(finalArr.length==0){
+				$scope.result = 'Please enter valid items!';
+				$scope.resultClass = 'fontRed';
+
+			}else{
 				$scope.result = 'Enjoy!';
 				$scope.resultClass = 'fontGreen';
 			}
