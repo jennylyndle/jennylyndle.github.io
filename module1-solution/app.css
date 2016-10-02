@@ -1,0 +1,15 @@
+body{
+	font-color: black;
+	font-size: 2em;
+}
+.message 
+{
+font-size: 1.3em;
+font-weight: bold;
+}
+.fontGreen{
+	color:green;
+}
+.fontRed{
+color:red;
+}
