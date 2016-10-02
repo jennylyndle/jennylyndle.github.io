@@ -1,0 +1,8 @@
+The behaviour of this app is as follows:
+-->when the user enters comma separated items and presses the 'Check if too much' button any of the following outputs may occur depending on the input:
+  --> if text box is empty, we display 'Please enter the items!' in red.
+  --> if there are less than equal to three items we display 'Enjoy!' in green.
+  --> if there are greater than three items we display 'Too much!' in red.
+  --> if we enter only commas, without even a single item i.e ',,,,,,', I have taken it as an invalid input and will display 'Please enter valid items!' in red.
+  --> Otherwise, if there is atleast one item valid, followed by commas like 'a,,,,', I have considered it as a single valid item and display 'Enjoy!'.
+  
