@@ -1,4 +1,5 @@
-
+(function(){
+	'use strict';
 var app = angular.module('ShoppingListCheckOff',[]);
 	app.service('ShoppingListCheckOffService',function(){
 		this.listOfItems = [{ name: "cookies", quantity: '10' },
@@ -30,3 +31,4 @@ var app = angular.module('ShoppingListCheckOff',[]);
 		$scope.bought = ShoppingListCheckOffService.boughtItems;
 			}]);
 		
+})();
