@@ -1,0 +1,18 @@
+<!-- <ul>
+  <li ng-repeat="item in filteredItems">
+    {{ item.name+'('+item.short_name+')'+' - '+item.description }}
+    <button ng-click="onRemove({index: $index});">Remove Item</button>
+  </li>
+</ul> -->
+<table ng-if="!errorMessage">
+<tr ng-repeat="item in filteredItems">
+<td>    {{ item.name+'('+item.short_name+')'+' - '+item.description }}
+</td>
+<td>
+    <button class="btn btn-primary" style="margin:10px;" ng-click="onRemove({index: $index});">Don't want this one!</button>
+</td>
+</tr>
+</table>
+<div class="error" ng-if="errorMessage">
+Nothing found! 
+</div>
