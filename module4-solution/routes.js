@@ -16,6 +16,7 @@
 			url : '/',
 			templateUrl : 'home.html'
 		}).state('categories', {
+			url:'/categories',
 			templateUrl : 'categories.html',
 			controller : 'categoriesController as catCtrl',
 			resolve : {
