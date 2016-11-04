@@ -1,0 +1,6 @@
+<div style="text-align:center;padding-left:35%;">
+<my-info ng-if="!myInfoCtrl.signup" info="myInfoCtrl.info"></my-info>
+<div ng-if="myInfoCtrl.signup">
+Not Signed Up Yet.<a ui-sref="public.signup"> Sign up Now!</a>
+</div>
+</div>
