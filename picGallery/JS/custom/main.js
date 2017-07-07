@@ -138,7 +138,7 @@
 		//console.log(galleryContent);
 	};
 	
-	$.get( "http://localhost:8080/imageSlideShow/JS/custom/pic.json", function( data ) {
+	$.get( "https://jennylyndle.github.io/picGallery/JS/custom/pic.json", function( data ) {
 		picJson = data;
 		selectedYear = data.albums[0].year;
 		maxYear = data.albums[0].year;
