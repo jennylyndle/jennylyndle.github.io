@@ -1,9 +1,12 @@
 html{
 	font-size:62.5%;
 }
+h2,#picsHeader{
+	color: #568E14;
+}
 body{
 	text-align:center;
-	overflow:hidden;
+	overflow:auto;
 	font-size:14px;
 	font-size:1.4rem;
 }
@@ -12,14 +15,13 @@ body{
 	margin-top:5%;
 }
 .overlay{
-	position: absolute;
+	position: fixed;
 	top:0;
 	left:0;
 	z-index:1;
 	height:100vh;
 	width:100vw;
-	background-color: black;
-	opacity:0.5;
+	background-color: #f4f4f4;
 	display:none;
 	
 }
@@ -30,8 +32,8 @@ body{
 	left: 7.5vw;
 	z-index:2;
 	display:none;
-	color:white;
-	background-color:black;
+	color:black;
+	background-color:white;
 	width:85vw;
 	height:97vh;
 	font-size:3.4rem;
@@ -62,30 +64,30 @@ body{
 /*  timeline  */
 
 .timeline{
-	margin-top:5%;
+	margin-top:1%;
 	width:50%;
 	margin-left:25%;
 }
 .arrow, .selector, .img-prev, .img-next{
-	color:#94e0e6;
+	color: #568E14;
 }
 
 .img-prev, .img-next, .closeContainer{
 	font-size:5rem !important;
 }
 .disabled{
-	color: grey;
+	color: #f4f4f4;
 }
 
 .year:hover, .makeLink{
-	color: #94e0e6;
+	color: #568E14;
 	cursor: pointer;
 }
 .active{
-	color:green;
+	color:#568E14;
 }
 .active .selector{
-	background-color:#94e0e6;
+	background-color:#568E14;
 }
 .selector{
 	height:5px;
@@ -97,39 +99,50 @@ body{
 }
 
 .mainDiv{
-	  -webkit-box-shadow: 2px 2px 4px 0px black; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
-       box-shadow: 2px 2px 4px 0px black; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
-       color:white;
-       height:25vh;
+	   color:white;
+       min-height:25vh;
+       height:auto;
        padding:0;
        margin:2%;
 	
 }
-
+.picDiv{
+	margin:.5%;
+}
+#albumSummary{
+	font-size:1.4rem;
+	margin: 0 15% 0 15%;
+}
 .albumContainer, .imageContainer{
 	margin:2% 0 0 27%;
 	width: 50vw;
 	height: 75vh;
-	overflow-y:auto;
-	overflow-x:hidden;
+	/*overflow-y:auto;
+	overflow-x:hidden;*/
 }
 
 .faceOfAlbum, .albumPic{
+	-webkit-box-shadow: 2px 2px 4px 0px black; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+       box-shadow: 2px 2px 4px 0px black; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 	cursor:pointer;
+	min-height:25vh;
 	height:100%;
 	width:100%;	
 }
 
 .albumName{
-	position:absolute;
+/*	position:absolute;
 	z-index:2;
 	top:80%;
 	left:5%;
+*/
+color:#0000EE;
+margin:10% 0 20% 0;
 }
 
 .albumBreadcrumbs{
-	 text-align:left;
-	 margin: 2% 0 0 28%;	
+	 text-align:center;
+	 margin: 2% 0 0 0;	
 }
 
 .divOverlay{
@@ -145,12 +158,17 @@ body{
 	
 }
 .picDesc{
-	font-size:1.8rem;
+	font-size:1.6rem;
 	text-align:left;
 	margin-top:25%;
 	padding-left:0;
 }
 
+
 .content .col-lg-1,.content .col-lg-3, .arrow {
 	padding:0;
+}
+
+.noScroll{
+	overflow:hidden;
 }

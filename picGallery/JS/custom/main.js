@@ -17,6 +17,7 @@
 	
 	
 	var showImage = function(){
+		$('body').addClass('noScroll');
 		var imgSrc = $(this).data('full');
 		var imgHeading = $(this).data('heading');
 		var imgDescription = $(this).data('desc');
@@ -76,7 +77,7 @@
 		var data = eventData.pics;
 		for(var i=0;i<data.length;i++){
 			var imgsrc = data[i].thumbnail_url;
-			var outerDiv = $('<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 mainDiv"></div>')
+			var outerDiv = $('<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 mainDiv picDiv"></div>')
 							.data('full', data[i].full_url)
 							.data('index', i)
 							.data('heading', data[i].title)
@@ -92,7 +93,9 @@
 			   //}
 		}
 		$('.albumContainer').fadeOut('slow');
-		$('#picsHeader').text(" >> "+eventData.name);
+		$('#picsHeader').text(eventData.name);
+		$('#albumSummary').text(eventData.summary);
+		$('.albumBreadcrumbs').fadeIn("slow");
 		$('#eventName').addClass('makeLink');
 		$('.imageContainer').data('pics', data).fadeIn("slow")//.show();
 	};
@@ -100,6 +103,7 @@
 	var createAlbums = function(data, year){
 		var galleryContent = $('<div class="row"></div>');
 		$('.albumContainer').html('').hide();
+		$('.albumBreadcrumbs').hide();
 		for(var i=0;i<data.albums.length;i++)
 			{
 			 if(data.albums[i].year == year){
@@ -111,9 +115,9 @@
 					   var outerDiv = $('<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 mainDiv"></div>').data('pics', events[j]);
 					   var albumImage = $('<img class="faceOfAlbum"></img>').attr('src',imgsrc);
 					   var innerDiv = $('<div class="divOverlay"></div>');
-					   var picDesc  = $('<p class="albumName"></p>').text(albumName);
+					   var picDesc  = $('<div class="albumName"></div>').text(albumName);
 					   outerDiv.append(albumImage)
-					   		   .append(innerDiv)
+					   		  // .append(innerDiv)
 					   		   .append(picDesc)
 					   		   .data('eventData', events[j])
 					   		   .on('click', function(){
@@ -133,12 +137,12 @@
 				 continue;
 			}
 		$('.imageContainer').fadeOut();
-		$('#eventName').text(selectedYear+" Event Gallery");
+		$('#eventName').text("BAO Photo Gallery "+selectedYear);
 		$('.albumContainer').fadeIn();
 		//console.log(galleryContent);
 	};
 	
-	$.get( "https://jennylyndle.github.io/picGallery/JS/custom/pic.json", function( data ) {
+	$.get( "http://localhost:8080/imageSlideShow/JS/custom/pic.json", function( data ) {
 		picJson = data;
 		selectedYear = data.albums[0].year;
 		maxYear = data.albums[0].year;
@@ -151,6 +155,8 @@
 	$(document).click(function(e){
 					if (e.target.class != 'content' && e.target.class!= 'mainDiv' && !$('.content').find(e.target).length && !$('.mainDiv').find(e.target).length) {
 						$(".overlay, .content").hide();
+						$('body').removeClass('noScroll');
+
 				    }
 				}).on('click', '.closeContainer', function(){
 					$('.overlay, .content').hide();
