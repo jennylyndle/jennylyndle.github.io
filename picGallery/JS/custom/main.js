@@ -18,6 +18,7 @@
 	
 	var showImage = function(){
 		$('body').addClass('noScroll');
+	    $(window).scrollTop(0);
 		var imgSrc = $(this).data('full');
 		var imgHeading = $(this).data('heading');
 		var imgDescription = $(this).data('desc');
@@ -160,6 +161,8 @@
 				    }
 				}).on('click', '.closeContainer', function(){
 					$('.overlay, .content').hide();
+					$('body').removeClass('noScroll');
+
 				}).on('click', '.img-prev' ,function(){
 					var currIndex = $('.content img').data('currImgIndex');
 					var pics = $('.imageContainer').data('pics');
