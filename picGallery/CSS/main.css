@@ -110,6 +110,9 @@ body{
 	margin:.5%;
 	height: 25vh;
 }
+#picsHeader{
+	margin: 1% 15% 1% 15%;
+}
 #albumSummary{
 	font-size:1.4rem;
 	margin: 0 15% 0 15%;
@@ -143,7 +146,8 @@ margin:10% 0 20% 0;
 
 .albumBreadcrumbs{
 	 text-align:center;
-	 margin: 2% 0 0 0;	
+	 margin: 2% 0 0 18%;
+	 width:60%;	
 }
 
 .divOverlay{
