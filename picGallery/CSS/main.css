@@ -56,9 +56,13 @@ body{
 
 .closeContainer{
 	position: absolute;
-	top: -5%;
-	left: 102%;
+	top: -4%;
+	left: 100%;
 	z-index:3;
+	font-size:3.5rem;
+}
+.closeContainer span{
+	font-size: 3rem;
 }
 
 /*  timeline  */
@@ -72,7 +76,7 @@ body{
 	color: #568E14;
 }
 
-.img-prev, .img-next, .closeContainer{
+.img-prev, .img-next{
 	font-size:5rem !important;
 }
 .disabled{
