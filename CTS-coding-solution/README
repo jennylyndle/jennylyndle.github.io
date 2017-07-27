@@ -1,0 +1,33 @@
+Requirements:
+-->When any parent is checked the other parents and corresponding child should be disabled and other children should be checked.
+--> un checking of parent reverts things to original state.
+
+Assumptions:
+-->input is json array with non duplicated names for parent and children.
+-->Each object has only one key value pair.
+-->No event bound for state change in the children checkboxes
+
+Sample input hardcoded in script: 
+-->var obj = [
+	{
+		parent1: 'child1'
+	},{
+		parent2: 'child2'
+	},{
+		parent3: 'child3'
+	},
+	{
+		parent4: 'child4'
+	},{
+		parent5: 'child5'
+	},{
+		parent6: 'child6'
+	},
+	{
+		parent7: 'child7'
+	},{
+		parent8: 'child8'
+	},{
+		parent9: 'child9'
+	}
+	];
