@@ -120,6 +120,7 @@ body{
 #albumSummary{
 	font-size:1.4rem;
 	margin: 0 15% 0 15%;
+	text-align:justify;
 }
 .albumContainer, .imageContainer{
 	margin:2% 0 0 27%;
@@ -168,9 +169,10 @@ margin:10% 0 20% 0;
 }
 .picDesc{
 	font-size:1.6rem;
-	text-align:left;
+	text-align:justify;
 	margin-top:25%;
 	padding-left:0;
+	width:90%;
 }
 
 
