@@ -6,6 +6,8 @@ Assumptions:
 -->input is json array with non duplicated names for parent and children.
 -->Each object has only one key value pair.
 -->No event bound for state change in the children checkboxes
+-->If a child is selected when the corresponding parent is selected thereby rendering the child disabled, it still remains checked. Eg. if
+child3 is selected when i select parent3, it retains its checked state even if it is disabled.
 
 Sample input hardcoded in script: 
 -->var obj = [
