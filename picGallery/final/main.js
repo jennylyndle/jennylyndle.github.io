@@ -39,6 +39,8 @@
 			visibility : true
 		});
 	}
+	
+	//the below code should be called when the gallery button/link is clicked from the main page
 	$.get("https://jennylyndle.github.io/picGallery/orig/JS/custom/pic.json",
 			function(data) {
 				$('.timeLineContainer').timeline({
