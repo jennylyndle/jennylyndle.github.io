@@ -4,7 +4,7 @@ $.widget( "bao.load", {
         height: 100,
         width: 100,
         backgroundOpacity:'0.5',
-        loaderURL:'./loader/load.gif'
+        loaderURL:'./plugins/loader/load.gif'
     },
  
     _create: function() {
