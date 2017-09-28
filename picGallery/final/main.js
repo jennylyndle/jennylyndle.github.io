@@ -39,7 +39,7 @@
 			visibility : true
 		});
 	}
-	$.get("https://jennylyndle.github.io/picGallery/JS/custom/pic.json",
+	$.get("https://jennylyndle.github.io/picGallery/orig/JS/custom/pic.json",
 			function(data) {
 				$('.timeLineContainer').timeline({
 					data : data,
