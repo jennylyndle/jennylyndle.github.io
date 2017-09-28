@@ -75,9 +75,6 @@
 	font-size: 3rem;
 }
 
-.picHeading {
-	word-wrap: break-word;
-}
 
 .picDesc {
 	font-size: 1.6rem;
@@ -116,6 +113,9 @@
 	.viewImageContainer {
 		height: 55vh;
 	}
+	.picHeading {
+		word-wrap: break-word;
+	}
 }
 
 /* xs > 430 */
@@ -131,6 +131,9 @@
 	}
 	.viewImageContainer {
 		height: 55vh;
+	}
+	.picHeading {
+		word-wrap: break-word;
 	}
 }
 
@@ -149,6 +152,9 @@
 	.viewImageContainer {
 		height: 55vh;
 	}
+	.picHeading {
+		word-wrap: break-word;
+	}
 }
 
 /* sm */
@@ -163,6 +169,10 @@
 	.noScroll {
 		overflow: hidden;
 	}
+	.picHeading {
+		word-wrap: break-word;
+	}
+	
 }
 
 /* md */
@@ -177,6 +187,9 @@
 	.viewImageContainer {
 		height: auto;
 	}
+	.picHeading {
+		word-wrap: normal;
+	}
 }
 
 /*lg*/
@@ -187,5 +200,8 @@
 	}
 	.noScroll {
 		overflow: hidden;
+	}
+	.picHeading {
+		word-wrap: normal;
 	}
 }
