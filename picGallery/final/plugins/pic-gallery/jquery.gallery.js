@@ -43,6 +43,8 @@ $
 					_update : function() {
 						if (this.options.visible) {
 							var data = this.options.data.pics;
+							this.element.find('.imageContainer .row')
+							.html('');
 							var eventData = this.options.data;
 							for (var i = 0; i < data.length; i++) {
 								var imgsrc = data[i].thumbnail_url;
