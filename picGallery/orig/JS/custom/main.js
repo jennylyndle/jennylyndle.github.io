@@ -19,9 +19,6 @@
 					  width   : elem.outerWidth(),
 					  height  : elem.outerHeight()
 					});
-				console.log(elem.attr('class')+' '+'height:'+elem.height());
-				console.log(elem.attr('class')+' '+'width:'+elem.width());
-
 					$("#img-load").css({
 					  top  : ($("#loader").height() / 2),
 					  //left : ($("#loader").width() / 2)

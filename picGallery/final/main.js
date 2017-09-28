@@ -1,6 +1,7 @@
 (function($) {
 	'use strict';
 	
+	//shows the picture gallery
 	var showGallery = function(event, val) {
 		$('.overall').load();
 		//setTimeout(function(){
@@ -14,6 +15,8 @@
 		});
 		$('.overall').load('destroy');//},10000);
 	}
+	
+	//shows the event gallery
 	var showAlbums = function(event, val) {
 		$('.overall').load();
 	//	setTimeout(function(){
@@ -29,6 +32,8 @@
 			$('.overall').load('destroy');
 		//},10000);
 	}
+	
+	//shows individual image details
 	var showImage = function(event, data) {
 		$('.overall').imageDetail({
 			imgSrc : data.imgSrc,
