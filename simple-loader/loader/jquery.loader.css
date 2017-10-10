@@ -1,0 +1,7 @@
+.loader, .img-load{
+	position:absolute;
+}
+
+.loader{
+	z-index:9999;
+}
