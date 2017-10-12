@@ -1,0 +1,27 @@
+(function(){
+	'use strict';
+	$('#viewImage').on('click', function(){
+		var pics=[
+					{"title":"tiger", "thumbnail_url":"http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg", "full_url":"http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg",
+						"desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque arcu enim, mollis dictum tortor sit amet, rhoncus imperdiet arcu. Donec at bibendum erat, facilisis rhoncus mi. Quisque vitae mi leo. Suspendisse eget risus in magna mollis ultricies sit amet eget ipsum. Nulla ut consectetur augue. Cras ornare tortor quis tortor volutpat, vel aliquam nisl maximus. Vestibulum ullamcorper iaculis sollicitudin. Vestibulum ac ultrices lectus. Vivamus posuere sagittis metus, iaculis vulputate amet."},
+						
+						{"title":"crane", "thumbnail_url":"http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg", "full_url":"http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg","desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque arcu enim, mollis dictum tortor sit amet, rhoncus imperdiet arcu. Donec at bibendum erat, facilisis rhoncus mi. Quisque vitae mi leo. Suspendisse eget risus in magna mollis ultricies sit amet eget ipsum. Nulla ut consectetur augue. Cras ornare tortor quis tortor volutpat, vel aliquam nisl maximus. Vestibulum ullamcorper iaculis sollicitudin. Vestibulum ac ultrices lectus. Vivamus posuere sagittis metus, iaculis vulputate amet."},
+						
+						{"title":"elephant", "thumbnail_url":"http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg", "full_url":"http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg","desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque arcu enim, mollis dictum tortor sit amet, rhoncus imperdiet arcu. Donec at bibendum erat, facilisis rhoncus mi. Quisque vitae mi leo. Suspendisse eget risus in magna mollis ultricies sit amet eget ipsum. Nulla ut consectetur augue. Cras ornare tortor quis tortor volutpat, vel aliquam nisl maximus. Vestibulum ullamcorper iaculis sollicitudin. Vestibulum ac ultrices lectus. Vivamus posuere sagittis metus, iaculis vulputate amet."},
+						
+						{"title":"monkey", "thumbnail_url":"http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg", "full_url":"http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg","desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque arcu enim, mollis dictum tortor sit amet, rhoncus imperdiet arcu. Donec at bibendum erat, facilisis rhoncus mi. Quisque vitae mi leo. Suspendisse eget risus in magna mollis ultricies sit amet eget ipsum. Nulla ut consectetur augue. Cras ornare tortor quis tortor volutpat, vel aliquam nisl maximus. Vestibulum ullamcorper iaculis sollicitudin. Vestibulum ac ultrices lectus. Vivamus posuere sagittis metus, iaculis vulputate amet."},
+						
+						{"title":"dawn", "thumbnail_url":"http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg", "full_url":"http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg","desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque arcu enim, mollis dictum tortor sit amet, rhoncus imperdiet arcu. Donec at bibendum erat, facilisis rhoncus mi. Quisque vitae mi leo. Suspendisse eget risus in magna mollis ultricies sit amet eget ipsum. Nulla ut consectetur augue. Cras ornare tortor quis tortor volutpat, vel aliquam nisl maximus. Vestibulum ullamcorper iaculis sollicitudin. Vestibulum ac ultrices lectus. Vivamus posuere sagittis metus, iaculis vulputate amet."},
+						
+						{"title":"onebear","thumbnail_url":"http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg", "full_url":"http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg","desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque arcu enim, mollis dictum tortor sit amet, rhoncus imperdiet arcu. Donec at bibendum erat, facilisis rhoncus mi. Quisque vitae mi leo. Suspendisse eget risus in magna mollis ultricies sit amet eget ipsum. Nulla ut consectetur augue. Cras ornare tortor quis tortor volutpat, vel aliquam nisl maximus. Vestibulum ullamcorper iaculis sollicitudin. Vestibulum ac ultrices lectus. Vivamus posuere sagittis metus, iaculis vulputate amet."},
+						
+						{"title":"threebears", "thumbnail_url":"http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg", "full_url":"http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg","desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque arcu enim, mollis dictum tortor sit amet, rhoncus imperdiet arcu. Donec at bibendum erat, facilisis rhoncus mi. Quisque vitae mi leo. Suspendisse eget risus in magna mollis ultricies sit amet eget ipsum. Nulla ut consectetur augue. Cras ornare tortor quis tortor volutpat, vel aliquam nisl maximus. Vestibulum ullamcorper iaculis sollicitudin. Vestibulum ac ultrices lectus. Vivamus posuere sagittis metus, iaculis vulputate amet."}
+						
+					   ];
+		$('#samp').imageDetail({visibility:true,
+								pics:pics, 
+								leftArrow:'<i class="fa fa-chevron-left" aria-hidden="true"></i>',
+								rightArrow:'<i class="fa fa-chevron-right" aria-hidden="true"></i>'
+								});
+	});
+})();
