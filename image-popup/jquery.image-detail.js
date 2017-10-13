@@ -1,6 +1,6 @@
 $
 		.widget(
-				"bao.imageDetail",
+				"jen.imageDetail",
 				{
 
 					options : {
