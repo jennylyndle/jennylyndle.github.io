@@ -1,4 +1,4 @@
-$.widget("bao.load", {
+$.widget("sl.load", {
 
 	options : {
 		height : 100,
